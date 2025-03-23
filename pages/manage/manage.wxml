@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="title">食物列表管理</view>
+  
+  <view class="add-food">
+    <input class="food-input" type="text" placeholder="输入食物名称" value="{{newFood}}" bindinput="onInput" />
+    <button class="add-btn" bindtap="addFood">添加</button>
+  </view>
+
+  <view class="food-list">
+    <block wx:for="{{foodList}}" wx:key="index">
+      <view class="food-item">
+        <text>{{item}}</text>
+        <button class="delete-btn" style="float: right; width: 60px;" bindtap="deleteFood" data-index="{{index}}">删除</button>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="title">今天吃什么？</view>
+  <view class="slot-machine {{isSelecting ? 'spinning' : ''}}">
+    <view class="slot-window">
+      <view class="slot-item">{{selectedFood}}</view>
+    </view>
+  </view>
+  <button class="choose-btn {{isSelecting ? 'selecting' : ''}}" bindtap="onChooseFood" disabled="{{isSelecting}}">随机选择</button>
+  <button class="manage-btn" bindtap="goToManage">管理食物列表</button>
+</view>

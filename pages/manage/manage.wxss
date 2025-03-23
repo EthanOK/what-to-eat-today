@@ -1,0 +1,59 @@
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-food {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.food-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-btn {
+  padding: 0 0px;
+  background-color: #07c160;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.food-list {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.food-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.food-item:last-child {
+  border-bottom: none;
+}
+
+.delete-btn {
+  padding: 4px 8px;
+  font-size: 14px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+}
